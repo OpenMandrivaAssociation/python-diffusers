@@ -1,6 +1,6 @@
 Name:		python-diffusers
 Version:	0.39.0
-Release:	1
+Release:	2
 Summary:	State-of-the-art diffusion models for image and audio generation
 License:	Apache-2.0
 Group:		Development/Python
@@ -9,8 +9,9 @@ Source0:	https://files.pythonhosted.org/packages/source/d/diffusers/diffusers-%{
 BuildArch:	noarch
 BuildSystem:	python
 BuildRequires:	python
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
